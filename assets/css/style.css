@@ -132,7 +132,7 @@ h1{
 }
 
  img{
-  max-width: 700px;
+  max-width: 500px;
   width: 80%;
   border-radius: 10%;
   align-self: center;
@@ -177,7 +177,6 @@ footer{
 
 }
 .footer__btn{
-  text-decoration: none;
   color: #E4E4DB;
   border-radius: 5%;
   text-align: center;
@@ -185,8 +184,10 @@ footer{
   font-weight: 800;
   border: 2px solid #E4E4DB;
   width: 10rem;
+  background-color: #003B4A;
+  font-size: 2rem;
 }
- a.footer__btn:hover{
+ input.footer__btn:hover{
   background-color: #E4E4DB;
   color: #003B4A;
 }
@@ -435,41 +436,68 @@ padding-bottom: 0.5em;
   grid-template-columns: repeat(2,1fr);
 }
 .main__news--images{
-  width: 90%;
+  min-width: 50rem;
+  max-width: 70rem;
   border-radius: 0;
   transform: unset;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 .main__news__bloque1{
   width: 100%;
   background-color: #E4E4DB;
-  padding-top: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 3rem;
+  align-items: center;
 }
 .main__news--titulo{
-  font-size: 4rem;
+  font-size: 5rem;
+  z-index: 50;
+  position: absolute;
+  top: 3rem;
 }
 .main__news__bloque2{
   background-color: #F1F1EE;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  align-items: center;
 }
 .main__news__bloque3{
   background-color: black;
   color: #E4E4DB;
   min-height: 100vh;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main__news--titulo2{
+  color: #E4E4DB;
+  font-size: 5rem;
+  z-index: 50;
+  position: absolute;
+  top: 6rem;
 }
 .main__news__bloque4{
   background-image: url('../img/news3.png');
-  background-position: center;
+  background-position:center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
   color: #E4E4DB;
   min-height: 100vh;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#myVideo{
+  position: relative;
 }
 /*Inicia Contact*/
 .gridContainerContact{
@@ -496,9 +524,6 @@ padding-bottom: 0.5em;
   align-items: center;
   background-color: #F1F1EE;
 }
-.flechaEnviar{
-  display: none;
-}
 .main__contact--datos{
   display: flex;
   flex-direction: column;
@@ -514,7 +539,7 @@ padding-bottom: 0.5em;
   border:none;
   border-bottom: 0.2rem solid #003B4A;
   text-align: left;
-  font-family: worksans;
+  font-family: worksans,Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 .main__contact__btn{
@@ -522,9 +547,11 @@ padding-bottom: 0.5em;
   padding: 1em;
   font-weight: 600;
   background-color: #003B4A;
+  font-family: worksans,Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  display: flex;
   align-self: center;
   align-items: center;
-  display: flex;
 }
 .textareacontact{
   align-self: stretch;
@@ -575,9 +602,39 @@ padding-bottom: 0.5em;
   padding-bottom: 2em;
 }
 .flex__containerBody{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "image1 image2"
+    "image3 image4"
+    "image5 image6"
+    "image7 image8" ;
+  justify-items:center;
+  gap:2em;
+}
+.main__productsBody--images1{
+  grid-area: image1;
+}
+.main__productsBody--images2{
+  grid-area: image2;
+}
+.main__productsBody--images3{
+  grid-area: image3;
+}
+.main__productsBody--images4{
+  grid-area: image4;
+}
+.main__productsBody--images5{
+  grid-area: image5;
+}
+.main__productsBody--images6{
+  grid-area: image6;
+}
+.main__productsBody--images7{
+  grid-area: image7;
+}
+.main__productsBody--images8{
+  grid-area: image8;
 }
 .backtocolor{
   color: black;
@@ -586,6 +643,7 @@ padding-bottom: 0.5em;
 #myVideo {
   width: 100%;
   min-height: 100vh;
+  object-fit: cover;
 }
 
 /*vista desktop*/
@@ -765,17 +823,16 @@ padding-bottom: 0.5em;
     grid-template-columns: repeat(4,1fr);
   }
   .main__news--titulo{
-    font-size: 6rem;
+    font-size: 8rem;
+  }
+  .main__news--titulo2{
+    font-size: 8rem;
   }
   .main__news--images{
-    width: 100%;
+    min-width: 90rem;
   }
 
   /*Inicia Contact*/
-  .main__contact__btn:hover > i{
-    display: flex;
-    padding-left: 0.3em;
-  }
   .gridContainerContact{
     grid-template-columns: repeat(4,1fr);
   }
