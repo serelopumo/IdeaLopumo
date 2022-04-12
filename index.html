@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/aa72380eaf.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                     We’re Frida <br> Our products are <strong>cueltry free</strong> <br> and <strong>parabens
                         free</strong>. <br> Made from natural ingredients</p>
 
-                <img class="animate__flipInX" src="./assets/img/home1.png" alt="home1" />
+                <img src="./assets/img/home1.png" alt="home1" />
             </section>
 
             <section class="gridParrafo gridParrafo2 main__fondo2">
@@ -57,7 +57,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio, explicabo perferendis
                         quisquam natus non assumenda ipsum</p>
                 </div>
-                <img src="./assets/img/home2.png" alt="imagen de playa" />
+                <img data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" src="./assets/img/home2.png" alt="imagen de playa" />
             </section>
 
             <section class="gridParrafo gridParrafo3--gridPadre main__fondo3">
@@ -66,8 +68,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Nemo, qui
                         blanditiis sunt.</p>
                 </div>
-                <img class="image1" src="./assets/img/home3.png" alt="Imágen de playa" />
-                <img class="image2" src="./assets/img/home4.png" alt="Imágen de playa" />
+
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="image1"
+                    src="./assets/img/home3.png" alt="Imágen de playa" />
+                <img data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="image2" src="./assets/img/home4.png" alt="Imágen de playa" />
             </section>
         </main>
         <footer>
@@ -89,6 +95,10 @@
             <p class="derechos">© Copyright. All Rights Reserved Designed by Sere Lopumo</p>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
