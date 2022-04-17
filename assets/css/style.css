@@ -205,6 +205,7 @@ footer {
   width: 10rem;
   background-color: #003B4A;
   font-size: 2rem;
+  transition: all .5s;
 }
 
 input.footer__btn:hover {
@@ -263,11 +264,35 @@ input.footer__btn:hover {
 }
 
 .derechos {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 0.5em;
 }
-
+.derechos a{
+  text-decoration: none;
+  color: #E4E4DB;
+}
+.derechos a:hover{
+  text-decoration: underline;
+}
 /*Inicia Our Team*/
+.cardOurTeam{
+  width: 100%;
+  background-color: #E4E4DB;  
+}
+.card-text{
+  font-weight: 600;
+  margin: 0;
+}
+.card-title{
+  font-weight: 600;
+  margin: 0;
+}
+.cardImageOurTeam{
+  border-radius: 0%;
+}
+.cardImageDivOurTeam{
+  overflow: hidden;
+}
 .gridContainerOurTeam {
   min-height: 100vh;
   width: 100%;
@@ -279,7 +304,11 @@ input.footer__btn:hover {
 .main__ourteam__bloque1 {
   font-size: 3rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+}
+.main__ourteam__bloque2--titulo{
+  font-size: 6rem;
 }
 
 .main__ourteam__bloque1--cuadro--titulo {
@@ -291,17 +320,16 @@ input.footer__btn:hover {
 .main__ourteam__bloque1--cuadro {
   background-color: #003B4A;
   color: #E4E4DB;
-  width: 50%;
+  width: 100%;
 }
 
 .main__ourteam__bloque1--imagenes {
-  padding-top: 2rem;
   background-color: #E4E4DB;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  align-items: center;
 }
-
 .main__ourteam__bloque1--nombres {
   font-size: 3rem;
 }
@@ -332,7 +360,10 @@ input.footer__btn:hover {
   margin: 0 auto;
   width: 100%;
 }
-
+.backto:hover {
+  text-decoration: none;
+  color: black;
+}
 .flex__containerMain {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -342,32 +373,71 @@ input.footer__btn:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 30%;
+  width: 100%;
   align-items: center;
   padding: 2rem;
+  gap:1em;
 }
-
+.card{
+  overflow: hidden;
+  width: 70%;
+  background-color: white;
+  border: none;
+}
+.card-shadow{
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.538) ;
+}
+.card-imgBody{
+  overflow: hidden;
+}
+.btn{
+  background: linear-gradient(to right, rgba(0,59,74,1) 0%, rgba(44,91,102,1) 37%, rgb(23, 134, 156) 90%);
+  border: none;
+  font-size: 1.5rem;
+}
+.btn:hover{
+  opacity: 80%;
+}
+.card-img-top{
+  border-radius: 0%;
+}
 .flex__container_browse {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  transition: all 0.5s;
+  font-weight: 600;
+  gap:1em;
+}
+.flex__container_browse:hover{
+  text-decoration: none;
+  color: black;
+  transform: scale(1.1);
+}
+
+div a {
+ text-decoration: none;
 }
 
 .flechaBrowse {
-  width: 3rem;
+  font-size: 2rem;
+  padding-top: .4rem;
 }
 
 .flex__container1 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   width: 100%;
   gap: 1rem;
   background-color: #E4E4DB;
-  padding-left: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-
+.imagebodyShadow{
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.512);
+}
 .flex__container1--izquierda {
   width: 70%;
-  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -377,6 +447,8 @@ input.footer__btn:hover {
     "image4";
   gap: 2rem;
   padding-bottom: 2rem;
+  justify-items: center;
+  margin-top: 3em;
 }
 
 .flex__container1__images1 {
@@ -402,7 +474,6 @@ input.footer__btn:hover {
 
 .flex__container--browseTitulo {
   font-size: 1.5rem;
-  padding: 1em;
   color: black;
 }
 
@@ -417,11 +488,12 @@ input.footer__btn:hover {
 
 .flex__container2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   gap: 1rem;
   background-color: #F1F1EE;
   padding-left: 2rem;
+  align-items: center;
 }
 
 .flex__container2--izquierda {
@@ -446,11 +518,12 @@ input.footer__btn:hover {
 
 .flex__container3 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   width: 100%;
   gap: 1rem;
   background-color: #E4E4DB;
   padding-left: 3rem;
+  align-items: center;
 }
 
 .flex__container3--izquierda {
@@ -511,20 +584,24 @@ input.footer__btn:hover {
   border-radius: 0%;
 }
 .main__news--titulo{
-  padding-left: 20px; 
   z-index: 50;
   font-size: 5rem;
   position: absolute;
   top: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.300);
+  color: #E4E4DB;
 }
 
 .main__news__bloque2 {
-  background-color: #F1F1EE;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
+  background-image: url(../img/news2.png);
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80rem;
+  background-position:top;
 }
 
 .main__news__bloque3 {
@@ -541,14 +618,14 @@ input.footer__btn:hover {
   color: #E4E4DB;
   font-size: 5rem;
   z-index: 50;
-  position: absolute;
-  top: 6rem;
+  background-color: rgba(0, 0, 0, 0.300);
 }
 .main__news--titulo3{
   z-index: 50;
   font-size: 5rem;
   position: absolute;
-  top: 3rem;
+  background-color: rgba(0, 0, 0, 0.300);
+  width: 100%;
 }
 
 .main__news__bloque4 {
@@ -579,6 +656,20 @@ input.footer__btn:hover {
 
 .main__contact__mensaje--titulo {
   font-size: 4rem;
+  margin-top: .6em;
+}
+.formContact{
+  font-weight: 600;
+}
+.btnformContact{
+  font-size: 2rem;
+}
+.form-select{
+  font-size: 1.6rem;
+}
+#exampleFormControlTextarea1{
+  height: 20rem;
+  resize: none;
 }
 
 .main__contact--mensaje {
@@ -597,7 +688,10 @@ input.footer__btn:hover {
   align-items: center;
   background-color: #F1F1EE;
 }
-
+.form-group{
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
 .main__contact--datos {
   display: flex;
   flex-direction: column;
@@ -605,7 +699,12 @@ input.footer__btn:hover {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
+.mainProductsFace h2{
+  font-size: 6rem;
+}
+.mainProductsFace h3{
+  font-size: 4rem;
+}
 .main__contact--datos--texto {
   font-weight: 600;
 }
@@ -779,7 +878,7 @@ input.footer__btn:hover {
   }
 
   .footer__btn:hover {
-    transform: scale(1.2);
+    opacity: 80%;
   }
 
   footer {
@@ -826,11 +925,15 @@ input.footer__btn:hover {
   .gridContainerOurTeam {
     grid-template-columns: repeat(4, 1fr);
   }
-
+  .main__ourteam__bloque2--titulo{
+    font-size: 8rem;
+  }
   .main__ourteam__bloque1--imagenes {
     flex-direction: row;
   }
-
+  .main__ourteam__bloque1{
+    flex-direction: row;
+  }
   .main__ourteam__bloque2 {
     font-size: 6rem;
   }
@@ -853,7 +956,12 @@ input.footer__btn:hover {
     grid-column-start: 1;
     grid-column-end: 5;
   }
-
+  .flex__container1{
+    flex-direction: row-reverse;
+  }
+  .flex__container1--derecha {
+    width: 50%;
+  }
   .flex__container1--izquierda {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -872,7 +980,9 @@ input.footer__btn:hover {
   .flex__container--parrafo {
     font-size: 3rem;
   }
-
+  .flex__container2{
+    flex-direction: row;
+  }
   .flex__container2--izquierda {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -885,6 +995,9 @@ input.footer__btn:hover {
       "image1 image2"
       "image3 image4";
   }
+  .flex__container3{
+    flex-direction: row-reverse;
+  }
 
   /*Inicia News*/
   .gridContainerNews {
@@ -893,7 +1006,6 @@ input.footer__btn:hover {
 
   .main__news--titulo {
     font-size: 8rem;
-    padding-left: 200px;
   }
   .main__news--titulo2 {
     font-size: 8rem;
@@ -912,7 +1024,7 @@ input.footer__btn:hover {
   }
 
   .main__contact__mensaje--titulo {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .main__contact {
@@ -939,6 +1051,7 @@ input.footer__btn:hover {
 
   .backto:hover {
     transform: scale(1.5, 1.5);
+    opacity: 50%;
   }
 
   .gridContainerProductsBody {

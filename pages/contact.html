@@ -45,7 +45,7 @@
         </header>
         <main>
             <div class="main__contact">
-                <form class="main__contact--mensaje">
+                <!-- <form class="main__contact--mensaje">
                     <p class="main__contact__mensaje--titulo">Leave your <strong> message</strong> </p>
                     <div class="main__contact--mensaje--flex">
                         <input class="main__contact--mensaje--flexinput inputname" type="text" name="nombre"
@@ -57,6 +57,38 @@
                     <textarea class="main__contact--mensaje--flexinput textareacontact" name="message" cols="30"
                         rows="10" placeholder="Your message"></textarea>
                     <input type="submit" href="#" class="main__contact__btn" value="SUBMIT">
+                </form> -->
+                <form class="formContact">
+                  <p class="main__contact__mensaje--titulo">Leave your <strong> message</strong> </p>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input class="col-md-12" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input class="col-md-12" type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                  </div>
+                  <select class="form-select col-md-12 form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Your question</option>
+                    <option value="1">FAQS</option>
+                    <option value="2">Work with us</option>
+                    <option value="3">Problems with your purchase</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="inputAddress">Your message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Subscribe to our newsletter
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btnformContact">SUBMIT</button>
                 </form>
                 <div class="main__contact--datos">
                     <img class="main__contact--datos--image" src="../assets/img/contact.png" alt="contact">
@@ -83,7 +115,7 @@
                 <a class="footer__link" href="https://www.instagram.com/pasteleriavegana_libresoy">Instagram</a>
                 <a class="footer__link" href="https://www.facebook.com/VeganMKP/">Facebook</a>
             </div>
-            <p class="derechos">© Copyright. All Rights Reserved Designed by Sere Lopumo</p>
+            <p class="derechos">© Copyright. All Rights Reserved Designed by <a href="https://github.com/serelopumo">Sere Lopumo</a></p>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
