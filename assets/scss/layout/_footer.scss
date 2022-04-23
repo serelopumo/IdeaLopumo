@@ -1,0 +1,130 @@
+/*Inicia Footer*/
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: $background-secondary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $font-color-secondary;
+    gap: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    min-height: 100vh;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.footerSuscribe {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+    width: 100%;
+    align-items: center;
+}
+
+.join {
+    font-weight: 800;
+    font-size: 6rem;
+
+}
+
+.footer__btn {
+    color: $font-color-tertiary;
+    border-radius: 5%;
+    text-align: center;
+    font-family: $font-family-primary;
+    font-weight: 800;
+    border: 2px solid #ffffffff;
+    width: 15rem;
+    background-color: #ffffffff;
+    font-size: 2.5rem;
+    transition: all .5s;
+}
+
+input.footer__btn:hover {
+    background-color: $background-primary;
+    color: $font-color-tertiary;
+}
+
+.footerSuscribeText {
+    font-family: $font-family-primary;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.2rem solid $font-color-secondary;
+    text-align: left;
+    color: $font-color-secondary;
+    font-weight: 600;
+    width: 30rem;
+}
+
+.footerContact a {
+    text-decoration: none;
+    color: $font-color-secondary;
+}
+
+.footerSuscribeText::placeholder {
+    color: $font-color-secondary;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: $font-family-primary;
+    text-transform: capitalize;
+}
+
+.footerContact {
+    gap: 2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footerFollow {
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.footerFollow a {
+    text-decoration: none;
+    color: $font-color-secondary;
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.footerFollow a:hover {
+    text-decoration: underline $font-color-secondary;
+}
+
+.footer__texto {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.footer__texto--titulo {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.footerContact h5 {
+    font-weight: 600;
+    padding: 1px;
+    font-size: 1.5rem;
+}
+
+.derechos {
+    font-size: 1.5rem;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: 200;
+}
+
+.derechos a {
+    text-decoration: none;
+    color: $font-color-secondary;
+}
+
+.derechos a:hover {
+    text-decoration: underline;
+}

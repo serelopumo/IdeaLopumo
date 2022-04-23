@@ -1,0 +1,229 @@
+/*Inicia Products-Mobile*/
+.gridContainerProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .flex__containerMain {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .flex__container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    background-color: $background-primary;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex__container1--derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+    gap:1em;
+  }
+  .card{
+    overflow: hidden;
+    width: 70%;
+    background-color: $background-primary;
+    border: none;
+  }
+  .card-shadow{
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.538) ;
+  }
+  .card-imgBody{
+    overflow: hidden;
+  }
+  .btn{
+    background: $background-gradient;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .btn:hover{
+    opacity: 80%;
+  }
+  .card-img-top{
+    border-radius: 0%;
+  }
+  div a {
+   text-decoration: none;
+  }
+  .imagebodyShadow{
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.512);
+  }
+  .flex__container1--izquierda {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image1"
+      "image2"
+      "image3"
+      "image4";
+    gap: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+    margin-top: 3em;
+  }
+  .flex__container1__images1 {
+    grid-area: image2;
+  }
+  .flex__container1__images2 {
+    grid-area: image1;
+  }
+  .flex__container1__images3 {
+    grid-area: image4;
+  }
+  .flex__container1__images4 {
+    grid-area: image3;
+  }
+  .flex__container--titulos {
+    font-size: 4rem;
+    padding: 1em;
+  }
+  
+  .flex__container2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    background-color: $background-primary;
+    padding-left: 2rem;
+    align-items: center;
+  }
+  .flex__container3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    background-color: $background-primary;
+    padding-left: 3rem;
+    align-items: center;
+  }
+  
+  .flex__container3--izquierda {
+    width: 70%;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image1"
+      "image2"
+      "image3"
+      "image4";
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+   /*Inicia Products Face/Eyes-Mobile*/
+   .mainProductsFace h2{
+    font-size: 6rem;
+  }
+  .mainProductsFace h3{
+    font-size: 4rem;
+  }
+  .main__contact--datos--texto {
+    font-weight: 600;
+  }
+  .textareacontact {
+    align-self: stretch;
+    resize: none;
+  }
+  /*Products for*/
+  .gridContainerProductsFace {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mainProductsFace {
+    min-height: 90vh;
+    padding: 2em;
+    background-color: $background-cuadro;
+    color: $font-color-secondary;
+    font-size: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  .backto {
+    color: $font-color-secondary;
+  }
+  .backto:hover{
+    text-decoration: none;
+    color: $font-color-secondary;
+  }
+  
+  .gridContainerProductsBody {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $background-primary;
+  }
+  
+  .mainProductsBody {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .flex__containerBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image1 image2"
+      "image3 image4"
+      "image5 image6"
+      "image7 image8";
+    justify-items: center;
+    gap: 2em;
+  }
+  
+  .main__productsBody--images1 {
+    grid-area: image1;
+  }
+  
+  .main__productsBody--images2 {
+    grid-area: image2;
+  }
+  
+  .main__productsBody--images3 {
+    grid-area: image3;
+  }
+  
+  .main__productsBody--images4 {
+    grid-area: image4;
+  }
+  
+  .main__productsBody--images5 {
+    grid-area: image5;
+  }
+  
+  .main__productsBody--images6 {
+    grid-area: image6;
+  }
+  
+  .main__productsBody--images7 {
+    grid-area: image7;
+  }
+  
+  .main__productsBody--images8 {
+    grid-area: image8;
+  }
+  
+  .backtocolor {
+    color: $font-color-primary;
+    font-size: 6rem;
+  }

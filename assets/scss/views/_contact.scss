@@ -1,0 +1,83 @@
+/*Inicia Contact-Mobile*/
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-primary;
+    overflow: hidden;
+
+    &--form {
+        font-weight: 600;
+        background-color: $background-cuadro;
+        border-radius: 5%;
+        margin-top: 2em;
+        padding: .5em;
+        overflow: hidden;
+    }
+    
+    &--form--titulo {
+    font-size: 4rem;
+    margin-top: .6em;
+    }
+    &--form--btn {
+        font-size: 2rem;
+    }
+    
+
+}
+.main__contact--datos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    &--titulo{
+        font-size: 4rem;
+        margin-top: .6em;
+    }
+    &--texto{
+        font-size: 2rem;
+    }
+}
+
+/*Clases bootstrap*/
+.form-select {
+    font-size: 1.6rem;
+}
+#exampleFormControlTextarea1 {
+    height: 20rem;
+    resize: none;
+}
+.form-group {
+    font-size: 1.5rem;
+    margin-top: 2em;
+}
+.form-group input{
+    background-color: rgba(255, 255, 255, 0.634);
+    border: none;
+    color: $font-color-primary;
+    font-family: $font-family-primary;
+    font-size: 2rem;
+}
+.form-group textarea{
+    background-color: rgba(255, 255, 255, 0.634);
+    border: none;
+    color: $font-color-primary;
+    font-family: $font-family-primary;
+    font-size: 2rem;
+}
+.form-select{
+    background-color: rgba(255, 255, 255, 0.634);
+    border: none;
+    color: $font-color-primary;
+    font-family: $font-family-primary;
+    font-size: 2rem;
+}
+.form-group label {
+    font-family: $font-family-primary;
+    font-size: 2rem;
+}
+
