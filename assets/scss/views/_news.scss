@@ -5,12 +5,13 @@
     padding-top: 20px;
   }
   .imagesNews{
-    max-width: 1200px;
+    max-width: 1800px;
     border-radius: 0%;
+    width: 100%;
   }
   .main__news--titulo{
     z-index: 50;
-    font-size: 5rem;
+    font-size: 2rem;
     position: absolute;
     top: 3rem;
     display: flex;
@@ -29,7 +30,7 @@
   }
   .main__news--titulo2 {
     color: #E4E4DB;
-    font-size: 5rem;
+    font-size: 2rem;
     z-index: 50;
     background-color: rgba(0, 0, 0, 0.300);
   }
@@ -44,7 +45,7 @@
   }
   .main__news--titulo3{
     z-index: 50;
-    font-size: 4rem;
+    font-size: 2rem;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.300);
     width: 100%;
