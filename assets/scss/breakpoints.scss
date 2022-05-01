@@ -53,19 +53,19 @@
     }
 
     /*Inicia Index*/
-    .section1 p {
+    .section1 h1 {
         padding-top: 3rem;
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
-    .section1 p strong {
-        font-size: 5rem;
+    .section1 h1 strong {
+        font-size: 6rem;
     }
 
     .section2 {
         flex-direction: row-reverse;
 
-        &__cuadro--texto h3 {
+        &__cuadro--texto h2 {
             font-size: 5rem;
             font-weight: 600;
         }

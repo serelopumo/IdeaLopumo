@@ -16,7 +16,6 @@ footer {
     font-weight: 600;
     font-size: 3rem;
 }
-
 .footerSuscribe {
     display: flex;
     flex-flow: column nowrap;
@@ -60,10 +59,6 @@ input.footer__btn:hover {
     width: 30rem;
 }
 
-.footerContact a {
-    text-decoration: none;
-    color: $font-color-secondary;
-}
 
 .footerSuscribeText::placeholder {
     color: $font-color-secondary;
@@ -77,40 +72,45 @@ input.footer__btn:hover {
     gap: 2em;
     text-align: center;
     font-weight: 600;
+
+    & h5 {
+        font-weight: 600;
+        padding: 1px;
+        font-size: 1.5rem;
+    }
+    
+    & a {
+        text-decoration: none;
+        color: $font-color-secondary;
+    }
 }
 
 .footerFollow {
     text-align: center;
     font-weight: 600;
 
-}
+    & a {
+        text-decoration: none;
+        color: $font-color-secondary;
+        font-weight: 500;
+        font-weight: 600;
+        font-size: 2rem;
+    }
 
-.footerFollow a {
-    text-decoration: none;
-    color: $font-color-secondary;
-    font-weight: 500;
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.footerFollow a:hover {
-    text-decoration: underline $font-color-secondary;
+    & a:hover {
+        text-decoration: map-get($estilosFooter,text-decoration);
+        color: map-get($estilosFooter,color);
+    }
 }
 
 .footer__texto {
     font-weight: 600;
     font-size: 2rem;
-}
 
-.footer__texto--titulo {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.footerContact h5 {
-    font-weight: 600;
-    padding: 1px;
-    font-size: 1.5rem;
+    &--titulo{
+        font-size: 3rem;
+        font-weight: 600;
+    }
 }
 
 .derechos {
@@ -118,13 +118,13 @@ input.footer__btn:hover {
     padding-bottom: 0.5em;
     text-align: center;
     font-weight: 200;
-}
-
-.derechos a {
-    text-decoration: none;
-    color: $font-color-secondary;
-}
-
-.derechos a:hover {
-    text-decoration: underline;
+    & a{
+        text-decoration: none;
+        color: $font-color-secondary;
+    }   
+    & a:hover{
+        // text-decoration: underline;
+        text-decoration: map-get($estilosFooter,text-decoration);
+        color: map-get($estilosFooter,color);
+    }
 }

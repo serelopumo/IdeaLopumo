@@ -29,7 +29,7 @@
          position: absolute;
      }
 
-     & p {
+     & h1 {
          position: absolute;
          color: $font-color-secondary;
          font-size: 4rem;
@@ -37,7 +37,7 @@
          padding-top: 1.2em;
      }
 
-     & p strong {
+     & h1 strong {
          font-size: 5rem;
      }
  }
@@ -86,7 +86,7 @@
         text-align: center;
     }
 
-    &__cuadro--texto h3 {
+    &__cuadro--texto h2 {
         font-size: 4rem;
         font-weight: 600;
     }
@@ -177,6 +177,7 @@
    
     &__cuadro &__cuadro--titulo {
         font-size: 4rem;
+        font-weight: 700;
     }
  }
 

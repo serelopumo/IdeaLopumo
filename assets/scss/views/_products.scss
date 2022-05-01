@@ -1,4 +1,12 @@
 /*Inicia Products-Mobile*/
+@mixin flex-column-center{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .gridContainerProducts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,22 +19,14 @@
     grid-column-end: 5;
   }
   .flex__container1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    @include flex-column-center;
     gap: 1rem;
     background-color: $background-primary;
-    justify-content: center;
-    align-items: center;
   }
   .flex__container1--derecha {
-    display: flex;
-    flex-direction: column;
+    @extend .flex__container1;
     justify-content: flex-start;
-    width: 100%;
-    align-items: center;
     padding: 2rem;
-    gap:1em;
   }
   .card{
     overflow: hidden;
@@ -89,22 +89,18 @@
   }
   
   .flex__container2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
+    gap: 6rem;
     background-color: $background-primary;
     padding-left: 2rem;
-    align-items: center;
+    @include flex-column-center;
+    justify-content:flex-start;
   }
   .flex__container3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     gap: 1rem;
     background-color: $background-primary;
     padding-left: 3rem;
-    align-items: center;
+    @include flex-column-center;
+
   }
   
   .flex__container3--izquierda {
