@@ -1,56 +1,51 @@
 /*Inicia Our Team-Mobile*/
+.ourteamBloque1 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__cuadro{
+        background-color: $background-secondary;
+        color: $font-color-secondary;
+        width: 100%;
+    }
+    &__cuadro--titulo {
+        font-size: 5rem;
+        padding-top: 4rem;
+    }
+    &__cards {
+        background-color: $background-primary;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/*Inicia cards boostrap*/
 .cardOurTeam {
     width: 100%;
     background-color: $background-primary;
 }
-
 .card-text {
     font-weight: 500;
     margin: 0;
     font-size: 2rem;
 }
-
 .card-title {
     font-weight: 600;
     margin: 0;
     font-size: 3rem;
 }
-
 .cardImageOurTeam {
     border-radius: 0%;
 }
-
 .cardImageDivOurTeam {
     overflow: hidden;
 }
 
-.main__ourteam__bloque1 {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.main__ourteam__bloque1--cuadro {
-    background-color: $background-secondary;
-    color: $font-color-secondary;
-    width: 100%;
-}
-
-.main__ourteam__bloque1--cuadro--titulo {
-    font-size: 5rem;
-    padding-top: 4rem;
-}
-
-.main__ourteam__bloque1--imagenes {
-    background-color: $background-primary;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.main__ourteam__bloque2 {
+.ourteamBloque2 {
     background-image: url('../img/team.png');
     width: 100%;
     background-position: center;
@@ -58,17 +53,17 @@
     background-size: cover;
     min-height: 100vh;
     font-size: 5rem;
+
+    &__titulo {
+        font-size: 6rem;
+    }
+    &__flecha {
+        font-size: 8rem;
+        font-weight: 200;
+     }
 }
 
-.main__ourteam__bloque2--titulo {
-    font-size: 6rem;
-}
-
-.flecha {
-    width: 10%;
-}
-
-.mainOurTeam__bloque3 {
+.ourteamBloque3 {
     width: 100%;
 }
 
