@@ -57,12 +57,12 @@
     &__titulo {
         font-size: 6rem;
     }
-    &__flecha {
-        font-size: 8rem;
-        font-weight: 200;
-     }
+    
 }
-
+.fa-angle-down:hover {
+    color: rgba(0, 0, 0, 0.679);
+    text-decoration: none;
+}
 .ourteamBloque3 {
     width: 100%;
 }

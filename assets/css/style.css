@@ -340,9 +340,10 @@ img {
   font-size: 5rem; }
   .ourteamBloque2__titulo {
     font-size: 6rem; }
-  .ourteamBloque2__flecha {
-    font-size: 8rem;
-    font-weight: 200; }
+
+.fa-angle-down:hover {
+  color: rgba(0, 0, 0, 0.679);
+  text-decoration: none; }
 
 .ourteamBloque3 {
   width: 100%; }
@@ -478,7 +479,7 @@ div a {
 
 .backto:hover {
   text-decoration: none;
-  color: white; }
+  color: rgba(0, 0, 0, 0.436); }
 
 .gridContainerProductsBody {
   min-height: 100vh;
@@ -601,9 +602,6 @@ div a {
     font-size: 6rem; }
   .ourteamBloque2__titulo {
     font-size: 8rem; }
-  .fa-angle-down:hover {
-    color: rgba(0, 0, 0, 0.679);
-    text-decoration: none; }
   /*Inicia Products-Desktop*/
   .gridContainerProducts {
     grid-template-columns: repeat(4, 1fr); }
