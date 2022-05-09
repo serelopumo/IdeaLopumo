@@ -11,16 +11,20 @@
   width: 100%;
 }
 
-.newsBloque1__titulo {
-  z-index: 50;
-  font-size: 4rem;
+.newsBloque1__caja {
   position: absolute;
   top: 3rem;
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.newsBloque1__caja--titulo{
+  font-size: 3.5rem;
   background-color: $font-color-titulo;
   color: $font-color-secondary;
+  z-index: 50;
+  width: 100%;
 }
 
 .newsBloque2 {
@@ -33,7 +37,7 @@
 
   &__titulo {
     color: $font-color-secondary;
-    font-size: 4rem;
+    font-size: 3.5rem;
     z-index: 50;
     background-color: $font-color-titulo;
   }
@@ -50,7 +54,7 @@
 
   &__titulo {
     z-index: 50;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
     background-color: $font-color-titulo;
     width: 100%;
@@ -77,7 +81,7 @@
 
   &__titulo {
     z-index: 50;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
     background-color: $font-color-titulo;
     width: 100%;

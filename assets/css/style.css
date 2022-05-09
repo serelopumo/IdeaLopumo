@@ -138,10 +138,10 @@ img {
     justify-content: center;
     align-content: center; }
   .section2__cuadro--texto p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center; }
   .section2__cuadro--texto h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600; }
 
 .section3 {
@@ -208,10 +208,10 @@ img {
     text-align: center;
     gap: 1em; }
   .section3__cuadro .section3__cuadro--p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 60%; }
   .section3__cuadro .section3__cuadro--titulo {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 700; }
 
 /*Inicia News-Mobile*/
@@ -224,16 +224,19 @@ img {
   border-radius: 0%;
   width: 100%; }
 
-.newsBloque1__titulo {
-  z-index: 50;
-  font-size: 4rem;
+.newsBloque1__caja {
   position: absolute;
   top: 3rem;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100%; }
+
+.newsBloque1__caja--titulo {
+  font-size: 3.5rem;
   background-color: rgba(0, 0, 0, 0.3);
-  color: white; }
+  color: white;
+  z-index: 50;
+  width: 100%; }
 
 .newsBloque2 {
   background-image: url(../img/news2.png);
@@ -244,7 +247,7 @@ img {
   background-position: top; }
   .newsBloque2__titulo {
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     z-index: 50;
     background-color: rgba(0, 0, 0, 0.3); }
 
@@ -258,7 +261,7 @@ img {
   align-items: flex-start; }
   .newsBloque3__titulo {
     z-index: 50;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%; }
@@ -281,7 +284,7 @@ img {
   justify-content: center; }
   .newsBloque4__titulo {
     z-index: 50;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%; }
@@ -581,7 +584,7 @@ div a {
     .section3__cuadro .section3__cuadro--p {
       font-size: 3rem; }
   /*Inicia News-Desktop*/
-  .newsBloque1__titulo {
+  .newsBloque1__caja--titulo {
     font-size: 8rem; }
   .newsBloque2__titulo {
     font-size: 8rem; }
@@ -675,7 +678,8 @@ footer {
 
 .join {
   font-weight: 800;
-  font-size: 6rem; }
+  font-size: 6rem;
+  text-align: center; }
 
 .footer__btn {
   color: #a27365ff;
