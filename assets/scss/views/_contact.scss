@@ -39,6 +39,10 @@
     &--texto{
         font-size: 2rem;
     }
+    &--texto:hover{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 /*Clases bootstrap*/

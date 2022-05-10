@@ -14,6 +14,10 @@
         font-size: 5rem;
         padding-top: 4rem;
     }
+    &__cuadro--texto {
+        font-size: 2rem;
+        text-align: center;
+    }
     &__cards {
         background-color: $background-primary;
         display: flex;

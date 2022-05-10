@@ -31,6 +31,9 @@
     margin-top: .6em; }
   .main__contact--datos--texto {
     font-size: 2rem; }
+  .main__contact--datos--texto:hover {
+    text-decoration: none;
+    color: black; }
 
 /*Clases bootstrap*/
 .form-select {
@@ -302,6 +305,9 @@ img {
   .ourteamBloque1__cuadro--titulo {
     font-size: 5rem;
     padding-top: 4rem; }
+  .ourteamBloque1__cuadro--texto {
+    font-size: 2rem;
+    text-align: center; }
   .ourteamBloque1__cards {
     background-color: #E4E4DB;
     display: flex;
@@ -596,6 +602,8 @@ div a {
   /*Inicia our team-Desktop*/
   .ourteamBloque1 {
     flex-direction: row; }
+  .ourteamBloque1__cuadro--texto {
+    font-size: 3rem; }
   .ourteamBloque1__cards {
     flex-direction: row; }
   .ourteamBloque2 {
@@ -713,16 +721,19 @@ input.footer__btn:hover {
   text-transform: capitalize; }
 
 .footerContact {
-  gap: 2em;
+  gap: .3em;
   text-align: center;
-  font-weight: 600; }
-  .footerContact h5 {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column; }
+  .footerContact h4 {
     font-weight: 600;
     padding: 1px;
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   .footerContact a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 1.8rem; }
 
 .footerFollow {
   text-align: center;
@@ -732,7 +743,7 @@ input.footer__btn:hover {
     color: white;
     font-weight: 500;
     font-weight: 600;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .footerFollow a:hover {
     text-decoration: underline;
     color: rgba(255, 255, 255, 0.732); }
@@ -743,6 +754,8 @@ input.footer__btn:hover {
   .footer__texto--titulo {
     font-size: 3rem;
     font-weight: 600; }
+  .footer__texto--phone {
+    font-size: 1.5rem; }
 
 .derechos {
   font-size: 1.5rem;
